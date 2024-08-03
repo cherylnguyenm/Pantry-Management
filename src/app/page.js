@@ -93,19 +93,29 @@ export default function Home() {
         itemQuantity={itemQuantity}
         setItemQuantity={setItemQuantity}
       />
-      <Button variant="contained" onClick={handleOpen}>
+      <Button variant="contained"
+        onClick={handleOpen}
+        sx={{
+          background: 'linear-gradient(90deg, rgba(0,79,193,1) 0%, rgba(0,173,155,1) 66%)',
+          color: '#fff',
+          '&:hover': {
+            background: 'linear-gradient(90deg, rgba(0,79,193,0.8) 0%, rgba(0,173,155,0.8) 66%)',
+          },
+          borderRadius: 'var(--border-radius)',
+        }}
+      >
         Add New Item
       </Button>
       <Box border={'1px solid #333'}>
         <Box
           width="800px"
           height="100px"
-          bgcolor={'#ADD8E6'}
+          bgcolor={'rgb(34, 101, 195)'}
           display={'flex'}
           justifyContent={'center'}
           alignItems={'center'}
         >
-          <Typography variant={'h2'} color={'#333'} textAlign={'center'}>
+          <Typography variant={'h2'} color={'#ffffff'} textAlign={'center'}>
             Pantry Items
           </Typography>
         </Box>
