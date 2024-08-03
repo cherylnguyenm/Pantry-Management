@@ -7,9 +7,11 @@ const firebaseConfig = {
   projectId: "pantry-management-2c05c",
   storageBucket: "pantry-management-2c05c.appspot.com",
   messagingSenderId: "742618239251",
-  appId: "1:742618239251:web:e32571b2047dcc1d018ae6"
+  appId: "1:742618239251:web:e32571b2047dcc1d018ae6",
+  measurementId: "G-7RSP7MGTMC"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
 
